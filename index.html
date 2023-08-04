@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container my-3">
+      <div class="heding py-4 text-center">
+        <h1 class="text-white  text-uppercase">Weather App By City Name</h1>
+      </div>
+      <div
+        class="form-section w-75 m-auto my-4 d-flex align-items-center justify-content-center"
+      >
+        <input
+          class="form-control"
+          type="text"
+          id="city"
+          placeholder="Enter City Name"
+          name="cityInput"
+        />
+        <button class="btn btn-primary ms-2" id="getBtn">Get</button>
+      </div>
+      <div class="results my-5">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-md-4 col-lg-4 col-xxl-4">
+              <div class="box  rounded-2 p-3 text-white" id="dayOne"></div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xxl-4">
+              <div class="box  rounded-2 p-3 text-white" id="dayTwo"></div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xxl-4">
+              <div class="box  rounded-2 p-3 text-white" id="dayThree"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
